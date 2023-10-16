@@ -11,6 +11,7 @@ public class AvailableUserCategoryDTOConverter extends UserCategoryDTOConverter
     public AvailableUserCategoryDTO toDTO(UserCategory entity) {
         AvailableUserCategoryDTO dto = new AvailableUserCategoryDTO();
         super.setUpDTO(dto, entity);
+        dto.setAvailableContent(entity.getCategory().getAvailableContent());
         return dto;
     }
 

@@ -70,7 +70,7 @@ ________________________________________________________________________________
 /api/category/user/payment/start-process
 
 This is an endpoint to manually start the application's payment process.
-This endpoint is only created for test purposes, since there is a scheduler class created to call the paymentService methods this
+This endpoint is only created for test purposes, since there is a scheduler class created to call the paymentService methods, this
 endpoint is redundant.
 
 PaymentService:

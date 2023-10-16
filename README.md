@@ -30,7 +30,7 @@ ________________________________________________________________________________
 
 Gets all UserCategories from the signed in user.
 
-<img width="257" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/4f483eec-b095-4a51-ba72-15ef375215f5">
+<img width="239" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/3be407f9-3f19-4b35-ba1a-c2145317300e">
 
 _______________________________________________________________________________________________________________________________
 
@@ -45,7 +45,8 @@ A subscribed category has a startDate, while the availableCategory startDate is 
 
 USER_CATEGORY table
 
-<img width="376" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/4258f159-a217-48df-8bc2-f46315d0c8b4">
+<img width="379" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/c0a7ba29-daf7-49cd-ba5f-172e56500e9f">
+
 
 _______________________________________________________________________________________________________________________________
 
@@ -96,7 +97,3 @@ I chose the 2nd option, since you can implement extra functionality when upgradi
 Also if the a Shared subscription customer is new he will be charged based on the amount of subscribed days divided by 2.
 
 _______________________________________________________________________________________________________________________________
-
-Note:
-I added some prefilled data for the H2 database.
-All userPasswords are "hallo"

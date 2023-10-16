@@ -6,15 +6,14 @@ These are all of FilmLands categories.
 
 <img width="251" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/9c53b446-13f6-4643-af5c-84a30daa59f5">
 
-
+_______________________________________________________________________________________________________________________________
 
 @PostMapping
 /auth/signup
 Creates a user password is hashed in the database (also initiliazes all userCategories for the created user)
 
 <img width="193" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/272818a2-c7e5-4df0-8c46-58f324d04225">
-
-
+_______________________________________________________________________________________________________________________________
 
 @PostMapping
 /auth/login
@@ -22,7 +21,7 @@ Returns a jwt token, this token is used to get authorisation to all the other en
 
 <img width="481" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/178c98dd-2a91-4bee-b75b-eb72bd534fc5">
 
-
+_______________________________________________________________________________________________________________________________
 
 @GetMapping
 /api/category/user
@@ -30,7 +29,7 @@ Gets all UserCategories from the signed in user.
 
 <img width="257" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/4f483eec-b095-4a51-ba72-15ef375215f5">
 
-
+_______________________________________________________________________________________________________________________________
 
 @PostMapping
 /api/category/subscribe
@@ -44,7 +43,7 @@ USER_CATEGORY table
 
 <img width="376" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/4258f159-a217-48df-8bc2-f46315d0c8b4">
 
-
+_______________________________________________________________________________________________________________________________
 
 @PostMapping
 /api/category/share
@@ -61,7 +60,7 @@ Only then can the shared subscription be removed properly.
 
 <img width="284" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/927624a2-520d-4f1c-b015-80309a95062a">
 
-
+_______________________________________________________________________________________________________________________________
 
 /api/category/user/payment/start-process
 This is an endpoint to manually start the application's payment process.
@@ -90,6 +89,7 @@ I chose the 2nd option, since you can implement extra functionality when upgradi
 
 Also if the a Shared subscription customer is new he will be charged based on the amount of subscribed days divided by 2.
 
+_______________________________________________________________________________________________________________________________
 
 Note:
 I added some prefilled data for the H2 database.

@@ -2,36 +2,43 @@
 Filmland backend application
 
 These are all of FilmLands categories.
+
 <img width="251" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/9c53b446-13f6-4643-af5c-84a30daa59f5">
 
 @PostMapping
 /auth/signup
 Creates a user password is hashed in the database (also initiliazes all userCategories for the created user)
+
 <img width="193" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/272818a2-c7e5-4df0-8c46-58f324d04225">
 
 @PostMapping
 /auth/login
 Returns a jwt token, this token is used to get authorisation to all the other endpoints.
+
 <img width="481" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/178c98dd-2a91-4bee-b75b-eb72bd534fc5">
 
 @GetMapping
 /api/category/user
 Gets all UserCategories from the signed in user.
+
 <img width="257" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/4f483eec-b095-4a51-ba72-15ef375215f5">
 
 @PostMapping
 /api/category/subscribe
 Subscribes the loggedIn user to an available category, if the user is already subscribed to a category an exception will be thrown.
+
 <img width="467" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/8b2c795f-3edb-43ce-8478-d225438a3c53">
 
 A subscribed category has a startDate, while the availableCategory startDate is null.
 
 USER_CATEGORY table
+
 <img width="376" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/4258f159-a217-48df-8bc2-f46315d0c8b4">
 
 @PostMapping
 /api/category/share
 Subscribes the logged in user to another account, (for this application an agreement from the other user isn't necessary)
+
 <img width="563" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/f458816b-d9ca-4d11-9299-3cba1119ee3b">
 
 If you look at the USER_CATEGORY table you can see that there is an is_shared BIT(1) (boolean) column, this column is created to
@@ -40,6 +47,7 @@ prevent users from sharing their subscription more than twice.
 The real relationship between 2 users sharing a subscription is stored in the database.
 Imagine one subscriber decides to cancel their shared subscription, then it should be traceable which other user the subscription was shared with.
 Only then can the shared subscription be removed properly.
+
 <img width="284" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/927624a2-520d-4f1c-b015-80309a95062a">
 
 /api/category/user/payment/start-process

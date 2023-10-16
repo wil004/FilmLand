@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 @PostMapping
 /auth/signup
-Creates a user password is hashed in the database (also initiliazes all userCategories for the created user)
+Creates a user, the password is hashed in the database (also initiliazes all USER_CATEGORIES for the created user see /api/category/user)
 
 <img width="193" alt="image" src="https://github.com/wil004/FilmLand/assets/79720969/272818a2-c7e5-4df0-8c46-58f324d04225">
 _______________________________________________________________________________________________________________________________
